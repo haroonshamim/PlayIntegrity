@@ -19,6 +19,7 @@ public class TestScript : MonoBehaviour
     IEnumerator CheckIntegrity(string sku)
     {
         bool VerdictResult = true; ;
+       
         yield return StartCoroutine(IntegrityApiManager.IntegrityManagerInstance.StartCheck(r => VerdictResult = r));
 
         Debug.Log("RESULT:" + VerdictResult);
