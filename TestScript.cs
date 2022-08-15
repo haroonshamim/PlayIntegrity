@@ -32,7 +32,7 @@ public class TestScript : MonoBehaviour
         //else if (IntegrityApiManager.IntegrityManagerInstance.IsIntegrityCheckDone == true && IntegrityApiManager.IntegrityManagerInstance.IntegrityResult==false)
         //    Result.text = "TEST FAILED";
 
-        if (Result)
+        if (VerdictResult)
         {
             Result.text = "TEST PASSED";
         }
